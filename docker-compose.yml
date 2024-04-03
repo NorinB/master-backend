@@ -1,0 +1,28 @@
+version: '3.9'
+
+services:
+  master-backend:
+    container_name: master-backend
+    image: master-backend:1.0.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        DATABASE_URL: mongodb://mongoadmin:mongopassword@db:27017/starbroker
+    ports:
+      - "3030:3030"
+    depends_on:
+      - db
+  db:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=mongoadmin
+      - MONGO_INITDB_ROOT_PASSWORD=mongopassword
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
+    driver: local
