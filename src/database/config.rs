@@ -1,5 +1,12 @@
 use mongodb::options::Compressor;
-use std::time::Duration;
+use std::env::var;
+use std::{sync::OnceLock, time::Duration};
+
+#[allow(non_snake_case)]
+pub fn DATABASE_NAME() -> &'static str {
+    static DATABASE_NAME: OnceLock<String> = OnceLock::new();
+    DATABASE_NAME.get_or_init(|| var("DATABASE_NAME").unwrap())
+}
 
 pub struct DatabaseConfig {
     pub uri: String,

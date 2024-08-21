@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Kreis",
+    "path": "m50 200a150 150 0 1 1 0 1z"
+  },
+  {
+    "name": "Rechteck",
+    "path": "M 10 10 H 110 V 60 H 10 Z"
+  },
+  {
+    "name": "Dreieck",
+    "path": "M 50 150 L 150 150 L 100 50 Z"
+  },
+  {
+    "name": "Pfeil",
+    "path": "M 50 100 L 120 100 L 120 80 L 150 110 L 120 140 L 120 120 L 50 120 Z"
+  },
+  {
+    "name": "Fünfeck",
+    "path": "M 100 50 L 142 88 L 118 150 L 82 150 L 58 88 Z"
+  },
+  {
+    "name": "Sechseck",
+    "path": "M 50 90 L 100 60 L 150 90 L 150 150 L 100 180 L 50 150 Z"
+  },
+  {
+    "name": "Achteck",
+    "path": "M 60 20 L 140 20 L 180 60 L 180 140 L 140 180 L 60 180 L 20 140 L 20 60 Z"
+  },
+  {
+    "name": "Parallelogramm",
+    "path": "M 50 100 L 150 100 L 100 150 L 0 150 Z"
+  },
+  {
+    "name": "Trapez",
+    "path": "M 50 100 L 150 100 L 120 150 L 80 150 Z"
+  }
+]
